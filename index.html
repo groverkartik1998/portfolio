@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Kartik Grover Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- custom bootstrap css -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<!-- custom css -->
+    <link rel="stylesheet" href="css/styles.css">
+<!-- jquery for bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- bootstrap javascript -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300%7CLora">
+    <!-- font awesome -->
+        <script src="https://use.fontawesome.com/62db1f9eca.js"></script>
+  </head>
+  <body>
+<!-- open flex container -->
+    <section class="flex-container">
+<!-- open header -->
+      <header class="row header-container">
+        <div class="col-6 logo">
+          <img src="images/image.jpg" id="logo" alt="dark purple logo which reads 'EL' with white background and a line shaped like a roof on top">
+        </div>
+        <div class="col-6 main-title">
+          <h1>KARTIK GROVER</h1>
+          <h4>Front-End Web Development-1</h4>
+        </div>
+<!-- open bootstrap nav -->
+        <nav class="row navbar navbar-default">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target= "#collapse-navbar">
+              <span class="sr-only"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+            <div class="collapse navbar-collapse" id="collapse-navbar">
+              <ul class="nav navbar-nav">
+                <li class="nav-item"><a class="nav-item" href="#featured">Featured Work</a></li>
+                <li class="nav-item"><a class="nav-item" href="#contact">Contact</a></li>
+              </ul>
+          </div>
+        </nav>  <!-- end nav -->
+      </header>  <!-- end header -->
+      <div class="row hero">
+        <img class="col-12 hero-img" src="images/college.jpg" srcset="images/college.jpg 700w, images/college.jpg 1000w, images/college.jpg 1300w" sizes="(max-width: 550px) 100vw, (max-width: 768px) 100vw" alt="close up of a mosaic in pastel blues, greens and pinks">
+      </div>
+      <h2 class="row portfolio-title" id="featured">Featured Work</h2>
+      <section class="row portfolio">
+        <div class="col-6 project">
+          <a href="https://www.chitkara.edu.in">
+            <img class="project-img" src="images/download.png" srcset="images/download.png 700w, images/download.png 1000w, images/download.png 1300w" sizes="(max-width: 550px) 100vw, (max-width: 768px) 100vw" alt="pastel-colored image of the side of an apartment building with many windows and patios">
+          </a>
+          <h3>Chitkara University</h3>
+         <p>Explore Your Potential</p>
+          <a href="https://www.chitkara.edu.in">https://www.chitkara.edu.in</a>
+        </div>
+        <div class="col-6 project">
+          <a href="http://www.efrei.fr/en">
+            <img class="project-img" src="images/efrei.jpg" srcset="images/efrei.jpg 700w, images/efrei.jpg 1000w, images/efrei.jpg 1300w" sizes="(max-width: 550px) 100vw, (max-width: 768px) 100vw" alt="close up of the side of a brutalist building with blue reflecting windows">
+          </a>
+          <h3>Efrei Paris</h3>
+          <p>Explore Your Potential</p>
+          <a href="http://www.efrei.fr/en">http://www.efrei.fr/en</a>
+        </div>
+        <div class="col-6 project">
+          <a href="https://www.sharda.ac.in">
+            <img class="project-img" src="images/sharda.png" srcset="images/sharda.png 700w, images/sharda.png 1000w, images/sharda.png 1300w" sizes="(max-width: 550px) 100vw, (max-width: 768px) 100vw" alt="photo of a minimalist work space with beige chair white desk and stark accessories">
+          </a>
+          <h3>Sharda University</h3>
+         <p>Explore Your Potential</p>
+          <a href="https://www.sharda.ac.in">https://www.sharda.ac.in</a>
+        </div>
+      </section>
+
+<!-- open footer -->
+      <footer class="row col-12" id="contact">
+        <ul>
+          <li><a href="https://github.com/kartikgrover" target="blank"><i class="fa fa-github-alt fa-2x"></i></a>
+          </li>
+          <li><a href="https://twitter.com/kartikgrover" target="blank"><i class="fa fa-twitter fa-2x"></i></a>
+          </li>
+          <li><a href="https://ca.linkedin.com/in/kartikgrover-39a667106" target="blank"><i class="fa fa-linkedin fa-2x"></i></a>
+          </li>
+          <li><a href="http://www.kartikgrover.com" target="blank"><i class="fa fa-home fa-2x"></i></a>
+          </li>
+        </ul>
+      </footer>  <!-- close footer -->
+    </section>  <!-- close container -->
+
+    <script>
+    $('a[href*=\\#]').on('click', function(event){
+    event.preventDefault();
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+});
+    </script>
+  </body>
+</html>
